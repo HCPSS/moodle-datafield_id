@@ -26,4 +26,8 @@ class data_field_id extends data_field_base {
     function name() {
         return get_string('fieldtypelabel', "datafield_$this->type");
     }
+    
+    public function display_search_field($value = '') {
+        return '';
+    }
 }
