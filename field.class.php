@@ -19,7 +19,7 @@ class data_field_id extends data_field_base {
         return $fieldname;
     }
 
-    public function get_content_value($content) {
+    public static function get_content_value($content) {
         return trim($content->content, "\r\n ");
     }
 
